@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+:root{
+/* ### Primary */
+
+--Light-red: hsl(0, 100%, 67%);
+--Light-red-100: hsla(0, 100%, 67%, 0.1);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Orangey-yellow-100: hsla(39, 100%, 56%, 0.1);
+--Green-teal: hsl(166, 100%, 37%);
+--Green-teal-100: hsla(166, 100%, 37%, 0.1);
+--Cobalt-blue: hsl(234, 85%, 45%);
+--Cobalt-blue-100: hsla(234, 85%, 45%, 0.1);
+
+/* ## Gradients Background */
+
+--Light-slate-blue: hsl(252, 100%, 67%);
+--Light-royal-blue: hsl(241, 81%, 54%);
+
+/* ## Gradients Circle */
+
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+--background-color: #f1f1f1;
+
+}
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 body{
     width: 100%;
@@ -8,14 +46,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--background-color);
 }
 main{
     width: 750px;
     display: flex;
     height: 500px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 16px 16x 50px 1px rgb(14, 6, 247, 0.2);
     border-radius: 30px;
     flex-wrap: wrap;
+    background-color: white;
 }
 #section1{
     background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -52,7 +92,7 @@ h2{
     font-size: 40px;
 }
 #endP{
-    width: 200px;
+    width: 14.5rem;
     text-align: center;
     color: white;
     font-size: 16px;
@@ -93,6 +133,10 @@ h2{
 .div2{
     display: flex;
     align-items: center;
+    gap: 5px
+}
+.div2P2{
+    color: #969696;
 }
 button{
     background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -104,6 +148,7 @@ button{
     font-size: 15px;
 }
 button:active{
+    background-image: none;
     background-color: #303B59;
 }
 
@@ -113,13 +158,14 @@ button:active{
     }
     main{
         width: 375px;
-        height: 750px;
+        height: 850px;
         flex-direction: column;
         align-items: center;
     }
     #section1{
         border-radius: 0px 0px 30px 30px;
         gap: 15px;
+        padding-top: 20px;
     }
     #section2{
         width: 100%;
@@ -128,6 +174,9 @@ button:active{
         margin-top: 20px;
     }
     #summary{
-        font-size: 15px;
+        margin-top: 40px;
+    }
+    #alldivs{
+        margin-top: 20px;
     }
 }
